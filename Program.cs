@@ -1,4 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+Main();
+
+void Main()
+{
 Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
 Console.WriteLine("--------------------------------------------");
 Console.WriteLine();
@@ -9,6 +13,7 @@ CanadaQuestion();
 EnthusiasticQuestion();
 LoveCSharpQuestion();
 SecretQuestion();
+}
 
 
 void CanadaQuestion()
