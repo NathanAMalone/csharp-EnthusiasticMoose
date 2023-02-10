@@ -10,9 +10,9 @@ MooseSays("Hiya, Rocky!");
 MooseSays("I really am enthusiastic!");
 
 CanadaQuestion();
-EnthusiasticQuestion();
-LoveCSharpQuestion();
-SecretQuestion();
+// EnthusiasticQuestion();
+// LoveCSharpQuestion();
+// SecretQuestion();
 }
 
 
@@ -27,10 +27,7 @@ void CanadaQuestion()
     {
         MooseSays("I  K N E W  I T !!!");
     }
-}
-
-void EnthusiasticQuestion()
-{
+    
     bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
     if (isEnthusiastic)
     {
@@ -40,10 +37,7 @@ void EnthusiasticQuestion()
     {
         MooseSays("You should try it!");
     }
-}
 
-void LoveCSharpQuestion()
-{
     bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
     if (doesLoveCSharp)
     {
@@ -53,10 +47,7 @@ void LoveCSharpQuestion()
     {
         MooseSays("You will...oh, yes, you will...");
     }
-}
-
-void SecretQuestion()
-{
+    
     bool wantsSecret = MooseAsks("Do you want to know a secret?");
     if (wantsSecret)
     {
@@ -66,7 +57,47 @@ void SecretQuestion()
     {
         MooseSays("Oh, no...secrets are the best, I love to share them!");
     }
+    
 }
+
+// void EnthusiasticQuestion()
+// {
+//     bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
+//     if (isEnthusiastic)
+//     {
+//         MooseSays("Yay!");
+//     }
+//     else
+//     {
+//         MooseSays("You should try it!");
+//     }
+// }
+
+// void LoveCSharpQuestion()
+// {
+//     bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
+//     if (doesLoveCSharp)
+//     {
+//         MooseSays("Good job sucking up to your instructor!");
+//     }
+//     else
+//     {
+//         MooseSays("You will...oh, yes, you will...");
+//     }
+// }
+
+// void SecretQuestion()
+// {
+//     bool wantsSecret = MooseAsks("Do you want to know a secret?");
+//     if (wantsSecret)
+//     {
+//         MooseSays("ME TOO!!!! I love secrets...tell me one!");
+//     }
+//     else
+//     {
+//         MooseSays("Oh, no...secrets are the best, I love to share them!");
+//     }
+// }
 bool MooseAsks(string question)
 {
     Console.Write($"{question} (Y/N): ");
